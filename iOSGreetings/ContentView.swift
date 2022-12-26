@@ -33,15 +33,31 @@ struct BackgroundView: View {
 }
 
 struct TitleView: View {
+    @State var isRotated: Bool = false
     var body: some View {
-        VStack(alignment: .leading,spacing: 4,content: {
-            Text("Greetings!")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            Text("Exploring iOS 16 programming")
-                .font(.headline)
-                .fontWeight(.light)
-        })
+        HStack {
+            VStack(alignment: .leading,spacing: 4,content: {
+                Text("Greetings!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Text("Exploring iOS 16 programming")
+                    .font(.headline)
+                    .fontWeight(.light)
+            }).padding()
+            
+            Circle()
+                .strokeBorder(AngularGradient(gradient: Gradient(colors: [.accentColor,.gray,.green,.purple]),
+                                                     center: .center,
+                                                     angle: .zero)
+                              ,lineWidth: 15)
+                .rotationEffect(isRotated ? .zero : .degrees(360))
+                .frame(width: 70,height: 70)
+                .onTapGesture {
+                    withAnimation(Animation.easeIn) {
+                        isRotated.toggle()
+                    }
+                }
+        }
     }
 }
 

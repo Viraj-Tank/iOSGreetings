@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        ZStack {
+        ZStack(alignment: .leading) {
             // ignore safe area will cover the whole screen
             BackgroundView()
             
@@ -34,17 +34,26 @@ struct BackgroundView: View {
 
 struct TitleView: View {
     @State var isRotated: Bool = false
+    @State var captionIndex: Int = 0
+    let caption:[String] = [
+        "Explore iOS 16 Programming",
+        "Learning how to bake",
+        "Programming recipes",
+        "A quest for knowledge!"
+    ]
     var body: some View {
         HStack {
             VStack(alignment: .leading,spacing: 4,content: {
                 Text("Greetings!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text("Exploring iOS 16 programming")
+                Text(caption[captionIndex])
                     .font(.headline)
                     .fontWeight(.light)
-            }).padding()
-            
+            }).padding().onTapGesture {
+                captionIndex = Int.random(in: 0..<caption.count)
+            }
+            Spacer()
             Circle()
                 .strokeBorder(AngularGradient(gradient: Gradient(colors: [.accentColor,.gray,.green,.purple]),
                                                      center: .center,
@@ -56,7 +65,7 @@ struct TitleView: View {
                     withAnimation(Animation.easeIn) {
                         isRotated.toggle()
                     }
-                }
+                }.padding()
         }
     }
 }
@@ -70,9 +79,11 @@ struct MessagesView: View {
         DataItemModel(name: "Boom!", color: .purple)
     ]
     var body: some View {
-        ForEach(messages, content: { msg in
-            TextView(text: msg.name, color: msg.color)
-        })
+        VStack(alignment: .leading) {
+            ForEach(messages, content: { msg in
+                TextView(text: msg.name, color: msg.color)
+            })
+        }.padding()
     }
 }
 

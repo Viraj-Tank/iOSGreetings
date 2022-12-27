@@ -56,7 +56,7 @@ struct TitleView: View {
             }
             Spacer()
             Circle()
-                .strokeBorder(AngularGradient(gradient: Gradient(colors: [.accentColor,.gray,.green,.purple]),
+                .strokeBorder(AngularGradient(gradient: Gradient(colors: [.red,.gray,.green,.yellow]),
                                                      center: .center,
                                                      angle: .zero)
                               ,lineWidth: 15)

@@ -25,10 +25,11 @@ struct ContentView: View {
 struct BackgroundView: View {
     var body: some View {
         LinearGradient(
-            colors: [.blue,Color(red:139/255,green:80/255,blue:240/255)],
+//            colors: [.blue,Color(red:139/255,green:80/255,blue:240/255)],
+            colors: [Color("blue"),Color("blue2")],
             startPoint: .topTrailing,
             endPoint: .bottomTrailing
-        ).opacity(0.6).ignoresSafeArea()
+        ).opacity(0.8).ignoresSafeArea()
     }
 }
 
@@ -71,12 +72,13 @@ struct TitleView: View {
 }
 
 struct MessagesView: View {
+    // add these colors in assets then choose new color for both the appereance
     let messages = [
-        DataItemModel(name: "Greetings!", color: .green),
-        DataItemModel(name: "Welcome to Swift programming", color: .gray),
-        DataItemModel(name: "Are you ready to..", color: .yellow),
-        DataItemModel(name: "start exploring?", color: .red),
-        DataItemModel(name: "Boom!", color: .purple)
+        DataItemModel(name: "Greetings!", color: Color("green")),
+        DataItemModel(name: "Welcome to Swift programming", color: Color("gray")),
+        DataItemModel(name: "Are you ready to..", color: Color("yellow")),
+        DataItemModel(name: "start exploring?", color: Color("red")),
+        DataItemModel(name: "Boom!", color: Color("purple"))
     ]
     var body: some View {
         VStack(alignment: .leading) {
@@ -90,6 +92,7 @@ struct MessagesView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        ContentView().preferredColorScheme(.dark)
     }
 }
 

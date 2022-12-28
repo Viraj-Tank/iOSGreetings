@@ -26,7 +26,7 @@ struct ContentView: View {
 struct BackgroundView: View {
     var body: some View {
         LinearGradient(
-//            colors: [.blue,Color(red:139/255,green:80/255,blue:240/255)],
+            //            colors: [.blue,Color(red:139/255,green:80/255,blue:240/255)],
             colors: [Color("blue"),Color("blue2")],
             startPoint: .topTrailing,
             endPoint: .bottomTrailing
@@ -37,11 +37,11 @@ struct BackgroundView: View {
 struct TitleView: View {
     @State var isRotated: Bool = false
     @State var captionIndex: Int = 0
-    let caption:[String] = [
-        "Explore iOS 16 Programming",
-        "Learning how to bake",
-        "Programming recipes",
-        "A quest for knowledge!"
+    let caption:[LocalizedStringKey] = [
+        LocalizedStringKey("Explore iOS 16 Programming"),
+        LocalizedStringKey("Learning how to bake"),
+        LocalizedStringKey("Programming recipes"),
+        LocalizedStringKey("A quest for knowledge!")
     ]
     var body: some View {
         HStack {
@@ -58,8 +58,8 @@ struct TitleView: View {
             Spacer()
             Circle()
                 .strokeBorder(AngularGradient(gradient: Gradient(colors: [.red,.gray,.green,.yellow]),
-                                                     center: .center,
-                                                     angle: .zero)
+                                              center: .center,
+                                              angle: .zero)
                               ,lineWidth: 15)
                 .rotationEffect(isRotated ? .zero : .degrees(360))
                 .frame(width: 70,height: 70)
@@ -77,11 +77,11 @@ struct TitleView: View {
 struct MessagesView: View {
     // add these colors in assets then choose new color for both the appereance
     let messages = [
-        DataItemModel(name: "Greetings!", color: Color("green")),
-        DataItemModel(name: "Welcome to Swift programming", color: Color("gray")),
-        DataItemModel(name: "Are you ready to..", color: Color("yellow")),
-        DataItemModel(name: "start exploring?", color: Color("red")),
-        DataItemModel(name: "Boom!", color: Color("purple"))
+        DataItemModel(name: LocalizedStringKey("Greetings!"), color: Color("green")),
+        DataItemModel(name: LocalizedStringKey("Welcome to Swift programming"), color: Color("gray")),
+        DataItemModel(name: LocalizedStringKey("Are you ready to.."), color: Color("yellow")),
+        DataItemModel(name: LocalizedStringKey("start exploring?"), color: Color("red")),
+        DataItemModel(name: LocalizedStringKey("Boom!"), color: Color("purple"))
     ]
     var body: some View {
         VStack(alignment: .leading) {
@@ -100,7 +100,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct TextView: View {
-    let text: String
+    let text: LocalizedStringKey
     @State var color: Color
     let colors: [Color]=[
         .red,
@@ -135,7 +135,7 @@ struct TextView: View {
 struct DataItemModel: Identifiable {
     var id = UUID()
     
-    let name: String
+    let name: LocalizedStringKey
     let color: Color
 }
 

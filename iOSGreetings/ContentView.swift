@@ -16,7 +16,7 @@ struct ContentView: View {
                 
                 /*ForEach(0..<messages.count, content: { index in
                  TextView(text: messages[index].name, color: messages[index].color)
-                 })*/
+                 })*/   
             }
         }
     }

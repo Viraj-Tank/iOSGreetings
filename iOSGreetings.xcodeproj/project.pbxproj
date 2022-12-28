@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983D4208295CA9DA0002E345 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983D4207295CA9DA0002E345 /* Launch Screen.storyboard */; };
+		983D420A295CAA210002E345 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 983D4209295CAA210002E345 /* launch.png */; };
 		98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */; };
 		98CF6FFD2958907E009DC1CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFC2958907E009DC1CB /* ContentView.swift */; };
 		98CF6FFF29589080009DC1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CF6FFE29589080009DC1CB /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		983D4207295CA9DA0002E345 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		983D4209295CAA210002E345 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		98CF6FF72958907E009DC1CB /* iOSGreetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGreetings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGreetingsApp.swift; sourceTree = "<group>"; };
 		98CF6FFC2958907E009DC1CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		98CF6FF92958907E009DC1CB /* iOSGreetings */ = {
 			isa = PBXGroup;
 			children = (
+				983D4207295CA9DA0002E345 /* Launch Screen.storyboard */,
+				983D4209295CAA210002E345 /* launch.png */,
 				98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */,
 				98CF6FFC2958907E009DC1CB /* ContentView.swift */,
 				98CF6FFE29589080009DC1CB /* Assets.xcassets */,
@@ -127,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983D420A295CAA210002E345 /* launch.png in Resources */,
+				983D4208295CA9DA0002E345 /* Launch Screen.storyboard in Resources */,
 				98CF700329589080009DC1CB /* Preview Assets.xcassets in Resources */,
 				98CF6FFF29589080009DC1CB /* Assets.xcassets in Resources */,
 			);

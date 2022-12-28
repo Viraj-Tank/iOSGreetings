@@ -16,12 +16,13 @@ struct ContentView: View {
                 
                 /*ForEach(0..<messages.count, content: { index in
                  TextView(text: messages[index].name, color: messages[index].color)
-                 })*/   
+                 })*/
             }
         }
     }
 }
 
+/// it is background which contains linear gradient
 struct BackgroundView: View {
     var body: some View {
         LinearGradient(
@@ -71,6 +72,8 @@ struct TitleView: View {
     }
 }
 
+/// this is view that container message
+/// which changes color on click
 struct MessagesView: View {
     // add these colors in assets then choose new color for both the appereance
     let messages = [

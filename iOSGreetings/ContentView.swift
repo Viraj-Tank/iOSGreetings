@@ -4,7 +4,6 @@ struct ContentView: View {
     var body: some View {
         
         ZStack(alignment: .leading) {
-            // ignore safe area will cover the whole screen
             BackgroundView()
             
             VStack(alignment: .leading) {
@@ -24,6 +23,7 @@ struct ContentView: View {
 
 /// it is background which contains linear gradient
 struct BackgroundView: View {
+    
     var body: some View {
         LinearGradient(
             //            colors: [.blue,Color(red:139/255,green:80/255,blue:240/255)],
@@ -31,6 +31,7 @@ struct BackgroundView: View {
             startPoint: .topTrailing,
             endPoint: .bottomTrailing
         ).opacity(0.8).ignoresSafeArea()
+        // ignore safe area will cover the whole screen
     }
 }
 
@@ -77,7 +78,7 @@ struct TitleView: View {
 struct MessagesView: View {
     // add these colors in assets then choose new color for both the appereance
     let messages = [
-        DataItemModel(name: LocalizedStringKey("Greetings!"), color: Color("green")),
+        DataItemModel(name: LocalizedStringKey("Greetings"), color: Color("green")),
         DataItemModel(name: LocalizedStringKey("Welcome to Swift programming"), color: Color("gray")),
         DataItemModel(name: LocalizedStringKey("Are you ready to.."), color: Color("yellow")),
         DataItemModel(name: LocalizedStringKey("start exploring?"), color: Color("red")),
@@ -99,6 +100,8 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+// State work like observable variable
+// it will also update view when value is changed just like setState((){ }) in flutter
 struct TextView: View {
     let text: LocalizedStringKey
     @State var color: Color

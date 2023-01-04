@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983830822965DF9B00CCF02B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983830812965DF9B00CCF02B /* BackgroundView.swift */; };
+		983830842965E0F800CCF02B /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983830832965E0F800CCF02B /* MessagesView.swift */; };
+		983830862965E21000CCF02B /* DataItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983830852965E21000CCF02B /* DataItemModel.swift */; };
+		983830882965E27900CCF02B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983830872965E27900CCF02B /* TitleView.swift */; };
 		983D4208295CA9DA0002E345 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983D4207295CA9DA0002E345 /* Launch Screen.storyboard */; };
 		983D420A295CAA210002E345 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 983D4209295CAA210002E345 /* launch.png */; };
 		983D420D295CB0F50002E345 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 983D420F295CB0F50002E345 /* Localizable.strings */; };
 		98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */; };
-		98CF6FFD2958907E009DC1CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFC2958907E009DC1CB /* ContentView.swift */; };
+		98CF6FFD2958907E009DC1CB /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFC2958907E009DC1CB /* GreetingsView.swift */; };
 		98CF6FFF29589080009DC1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CF6FFE29589080009DC1CB /* Assets.xcassets */; };
 		98CF700329589080009DC1CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CF700229589080009DC1CB /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		983830812965DF9B00CCF02B /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		983830832965E0F800CCF02B /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		983830852965E21000CCF02B /* DataItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemModel.swift; sourceTree = "<group>"; };
+		983830872965E27900CCF02B /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		983D4207295CA9DA0002E345 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		983D4209295CAA210002E345 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		983D420E295CB0F50002E345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -24,7 +32,7 @@
 		98BE99992963A4C200D6FFDE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98CF6FF72958907E009DC1CB /* iOSGreetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGreetings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGreetingsApp.swift; sourceTree = "<group>"; };
-		98CF6FFC2958907E009DC1CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		98CF6FFC2958907E009DC1CB /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
 		98CF6FFE29589080009DC1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98CF700029589080009DC1CB /* iOSGreetings.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSGreetings.entitlements; sourceTree = "<group>"; };
 		98CF700229589080009DC1CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -41,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983830892965E33300CCF02B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				983830872965E27900CCF02B /* TitleView.swift */,
+				98CF6FFC2958907E009DC1CB /* GreetingsView.swift */,
+				983830812965DF9B00CCF02B /* BackgroundView.swift */,
+				983830832965E0F800CCF02B /* MessagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9838308A2965E34C00CCF02B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				983830852965E21000CCF02B /* DataItemModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9838308B2965E36100CCF02B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				983D4209295CAA210002E345 /* launch.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		98CF6FEE2958907E009DC1CB = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +95,15 @@
 		98CF6FF92958907E009DC1CB /* iOSGreetings */ = {
 			isa = PBXGroup;
 			children = (
-				983D420F295CB0F50002E345 /* Localizable.strings */,
-				983D4207295CA9DA0002E345 /* Launch Screen.storyboard */,
-				983D4209295CAA210002E345 /* launch.png */,
+				9838308B2965E36100CCF02B /* Assets */,
+				9838308A2965E34C00CCF02B /* Models */,
+				983830892965E33300CCF02B /* Views */,
 				98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */,
-				98CF6FFC2958907E009DC1CB /* ContentView.swift */,
 				98CF6FFE29589080009DC1CB /* Assets.xcassets */,
 				98CF700029589080009DC1CB /* iOSGreetings.entitlements */,
+				983D4207295CA9DA0002E345 /* Launch Screen.storyboard */,
 				98CF700129589080009DC1CB /* Preview Content */,
+				983D420F295CB0F50002E345 /* Localizable.strings */,
 			);
 			path = iOSGreetings;
 			sourceTree = "<group>";
@@ -156,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98CF6FFD2958907E009DC1CB /* ContentView.swift in Sources */,
+				983830862965E21000CCF02B /* DataItemModel.swift in Sources */,
+				983830842965E0F800CCF02B /* MessagesView.swift in Sources */,
+				983830822965DF9B00CCF02B /* BackgroundView.swift in Sources */,
+				98CF6FFD2958907E009DC1CB /* GreetingsView.swift in Sources */,
 				98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */,
+				983830882965E27900CCF02B /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

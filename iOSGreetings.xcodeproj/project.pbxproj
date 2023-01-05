@@ -15,6 +15,8 @@
 		983D4208295CA9DA0002E345 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 983D4207295CA9DA0002E345 /* Launch Screen.storyboard */; };
 		983D420A295CAA210002E345 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 983D4209295CAA210002E345 /* launch.png */; };
 		983D420D295CB0F50002E345 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 983D420F295CB0F50002E345 /* Localizable.strings */; };
+		988F130229664E4B008DC89C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F130129664E4B008DC89C /* TextView.swift */; };
+		988F13042966565E008DC89C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F13032966565E008DC89C /* MainView.swift */; };
 		98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */; };
 		98CF6FFD2958907E009DC1CB /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFC2958907E009DC1CB /* GreetingsView.swift */; };
 		98CF6FFF29589080009DC1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CF6FFE29589080009DC1CB /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		983D4207295CA9DA0002E345 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		983D4209295CAA210002E345 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		983D420E295CB0F50002E345 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		988F130129664E4B008DC89C /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		988F13032966565E008DC89C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		98BE999729639D4B00D6FFDE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98BE99992963A4C200D6FFDE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98CF6FF72958907E009DC1CB /* iOSGreetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGreetings.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,10 +58,12 @@
 		983830892965E33300CCF02B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				983830872965E27900CCF02B /* TitleView.swift */,
 				98CF6FFC2958907E009DC1CB /* GreetingsView.swift */,
+				9838308C2965E3DA00CCF02B /* LandscapeGreetingsView.swift */,
+				983830872965E27900CCF02B /* TitleView.swift */,
 				983830812965DF9B00CCF02B /* BackgroundView.swift */,
 				983830832965E0F800CCF02B /* MessagesView.swift */,
+				988F130129664E4B008DC89C /* TextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,7 +107,7 @@
 				9838308A2965E34C00CCF02B /* Models */,
 				983830892965E33300CCF02B /* Views */,
 				98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */,
-				9838308C2965E3DA00CCF02B /* LandscapeGreetingsView.swift */,
+				988F13032966565E008DC89C /* MainView.swift */,
 				98CF6FFE29589080009DC1CB /* Assets.xcassets */,
 				98CF700029589080009DC1CB /* iOSGreetings.entitlements */,
 				983D4207295CA9DA0002E345 /* Launch Screen.storyboard */,
@@ -196,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9838308D2965E3DA00CCF02B /* LandscapeGreetingsView.swift in Sources */,
+				988F13042966565E008DC89C /* MainView.swift in Sources */,
+				988F130229664E4B008DC89C /* TextView.swift in Sources */,
 				983830862965E21000CCF02B /* DataItemModel.swift in Sources */,
 				983830842965E0F800CCF02B /* MessagesView.swift in Sources */,
 				983830822965DF9B00CCF02B /* BackgroundView.swift in Sources */,

@@ -8,7 +8,7 @@ struct LandscapeGreetingsView: View {
             BackgroundView()
             
             HStack {
-                TitleView()
+                VerticalTitleView()
                 Spacer()
                 MessagesView()
             }

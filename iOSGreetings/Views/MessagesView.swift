@@ -12,11 +12,14 @@ struct MessagesView: View {
         DataItemModel(name: LocalizedStringKey("Boom!"), color: Color("purple"))
     ]
     var body: some View {
-        VStack(alignment: .leading) {
-            ForEach(messages, content: { msg in
-                TextView(text: msg.name, color: msg.color)
-            })
-        }.padding()
+        HStack {
+            VStack(alignment: .leading) {
+                ForEach(messages, content: { msg in
+                    TextView(text: msg.name, color: msg.color)
+                })
+            }.padding()
+            Spacer()
+        }
     }
 }
 

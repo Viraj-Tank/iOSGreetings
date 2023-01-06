@@ -1,6 +1,6 @@
 
 import SwiftUI
-
+// MARK: this is main view
 struct MainView: View {
     
     // create these variable to determine to screens height and width
@@ -12,16 +12,16 @@ struct MainView: View {
     var body: some View {
         if horizontalSizeClass == .compact &&
             verticalSizeClass == .regular {
-            
-            // the it is portrait mode
+            // TODO: open portrait view
             GreetingsView()
         } else {
-            //landscape mode
+            // TODO: open landscape mode
             LandscapeGreetingsView()
         }
     }
 }
 
+// MARK: it only displays preview inside xcode
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()

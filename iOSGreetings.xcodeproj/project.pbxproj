@@ -17,6 +17,7 @@
 		983D420D295CB0F50002E345 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 983D420F295CB0F50002E345 /* Localizable.strings */; };
 		988F130229664E4B008DC89C /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F130129664E4B008DC89C /* TextView.swift */; };
 		988F13042966565E008DC89C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F13032966565E008DC89C /* MainView.swift */; };
+		98C1B69C2972A44C00A4D649 /* LanguageOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C1B69B2972A44C00A4D649 /* LanguageOptionView.swift */; };
 		98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */; };
 		98CF6FFD2958907E009DC1CB /* GreetingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CF6FFC2958907E009DC1CB /* GreetingsView.swift */; };
 		98CF6FFF29589080009DC1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98CF6FFE29589080009DC1CB /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		988F13032966565E008DC89C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		98BE999729639D4B00D6FFDE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98BE99992963A4C200D6FFDE /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98C1B69B2972A44C00A4D649 /* LanguageOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageOptionView.swift; sourceTree = "<group>"; };
 		98CF6FF72958907E009DC1CB /* iOSGreetings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGreetings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98CF6FFA2958907E009DC1CB /* iOSGreetingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGreetingsApp.swift; sourceTree = "<group>"; };
 		98CF6FFC2958907E009DC1CB /* GreetingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingsView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				983830812965DF9B00CCF02B /* BackgroundView.swift */,
 				983830832965E0F800CCF02B /* MessagesView.swift */,
 				988F130129664E4B008DC89C /* TextView.swift */,
+				98C1B69B2972A44C00A4D649 /* LanguageOptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,7 +169,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				ar,
 				fr,
 				he,
@@ -206,6 +208,7 @@
 				988F130229664E4B008DC89C /* TextView.swift in Sources */,
 				983830862965E21000CCF02B /* DataItemModel.swift in Sources */,
 				983830842965E0F800CCF02B /* MessagesView.swift in Sources */,
+				98C1B69C2972A44C00A4D649 /* LanguageOptionView.swift in Sources */,
 				983830822965DF9B00CCF02B /* BackgroundView.swift in Sources */,
 				98CF6FFD2958907E009DC1CB /* GreetingsView.swift in Sources */,
 				98CF6FFB2958907E009DC1CB /* iOSGreetingsApp.swift in Sources */,
@@ -345,6 +348,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iOSGreetings/iOSGreetings.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSGreetings/Preview Content\"";
@@ -383,6 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = iOSGreetings/iOSGreetings.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iOSGreetings/Preview Content\"";

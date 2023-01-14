@@ -9,11 +9,25 @@ struct MainView: View {
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.verticalSizeClass) var verticalSizeClass
+    
+    @Binding var language: String
+    @Binding var layoutDirection: LayoutDirection
+    
     var body: some View {
         if horizontalSizeClass == .compact &&
             verticalSizeClass == .regular {
             // TODO: open portrait view
-            GreetingsView()
+            NavigationStack {
+                GreetingsView()
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            LanguageOptionView(
+                                language: $language,
+                                layoutDirection: $layoutDirection
+                            )
+                        }
+                    }
+            }
         } else {
             // TODO: open landscape mode
             LandscapeGreetingsView()
@@ -24,6 +38,6 @@ struct MainView: View {
 // MARK: it only displays preview inside xcode
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(language: .constant("en"), layoutDirection: .constant(.leftToRight))
     }
 }
